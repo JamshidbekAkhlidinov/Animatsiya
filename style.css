@@ -16,13 +16,15 @@
     /* animation-direction: alternate; */
     /* Teskarisiga */
     /* animation-direction: reverse; */
+    /* Vaqtni bolishi */
+    /* animation-timing-function: ease; */
 }
 
 section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 .box:hover {
@@ -38,8 +40,10 @@ section {
 @keyframes boxAnimation {
     form {
         transform: rotate(0deg);
+        filter: inherit;
     }
     to {
+        filter: initial;
         transform: rotate(360deg);
     }
 }
