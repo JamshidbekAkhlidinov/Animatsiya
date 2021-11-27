@@ -1,0 +1,41 @@
+.box {
+    transition: 0.8s;
+    width: 100px;
+    height: 100px;
+    animation-duration: 3s;
+    animation-name: boxAnimation;
+    animation-iteration-count: 20;
+    /* cheksiz */
+    /* animation-iteration-count: infinite; */
+    animation-delay: 2s;
+    /* Borib qaytadi */
+    /* animation-direction: alternate; */
+    /* Teskarisiga */
+    /* animation-direction: reverse; */
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.box:hover {
+    /* transform: translate(300px, 300px); */
+    /* suriladi */
+    /* transform: rotate(-80deg); */
+    /* buriladi */
+    /* transform: scale(1.5); */
+    /* kattalashtrish */
+    /* transform: translate(300px, 300px), rotate(90deg); */
+}
+
+@keyframes boxAnimation {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
