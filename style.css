@@ -18,6 +18,7 @@
     /* animation-direction: reverse; */
     /* Vaqtni bolishi */
     /* animation-timing-function: ease; */
+    filter: drop-shadow(10px 10px 10px red)
 }
 
 section {
@@ -27,23 +28,21 @@ section {
     padding-top: 150px;
 }
 
-.box:hover {
+.box:active {
     /* transform: translate(300px, 300px); */
     /* suriladi */
     /* transform: rotate(-80deg); */
     /* buriladi */
     /* transform: scale(1.5); */
     /* kattalashtrish */
-    /* transform: translate(300px, 300px), rotate(90deg); */
+    transform: translate(300px, 300px), rotate(90deg);
 }
 
 @keyframes boxAnimation {
     form {
         transform: rotate(0deg);
-        filter: inherit;
     }
     to {
-        filter: initial;
         transform: rotate(360deg);
     }
 }
