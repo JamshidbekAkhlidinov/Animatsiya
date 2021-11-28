@@ -10,6 +10,7 @@
     /* animation-iteration-count: 20; */
     /* cheksiz */
     animation-iteration-count: infinite;
+    /* Saytga kirganda kutish */
     animation-delay: 2s;
     /* Borib qaytadi */
     animation-direction: alternate;
@@ -17,9 +18,9 @@
     /* animation-direction: reverse; */
     /* Vaqtni bolishi */
     /* animation-timing-function: ease; */
-    filter: drop-shadow(10px 10px 10px red);
     background-image: url(./logo1.jpg);
     background-size: 100%;
+    filter: drop-shadow(10px 10px 10px rgb(88, 165, 26));
 }
 
 section {
@@ -44,7 +45,8 @@ section {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(720deg) scale(3);
+        transform: rotate(720deg) scale(2);
         border-radius: 50%;
+        filter: drop-shadow(10px 10px 10px rgb(230, 66, 93));
     }
 }
