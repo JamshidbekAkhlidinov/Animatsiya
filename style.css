@@ -5,20 +5,21 @@
     background-color: skyblue;
     border: 10px solid black;
     padding: 30px;
-    border-radius: 50%;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: boxAnimation;
     /* animation-iteration-count: 20; */
     /* cheksiz */
     animation-iteration-count: infinite;
     animation-delay: 2s;
     /* Borib qaytadi */
-    /* animation-direction: alternate; */
+    animation-direction: alternate;
     /* Teskarisiga */
     /* animation-direction: reverse; */
     /* Vaqtni bolishi */
     /* animation-timing-function: ease; */
-    filter: drop-shadow(10px 10px 10px red)
+    filter: drop-shadow(10px 10px 10px red);
+    background-image: url(./logo1.jpg);
+    background-size: 100%;
 }
 
 section {
@@ -43,6 +44,7 @@ section {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(720deg) scale(3);
+        border-radius: 50%;
     }
 }
