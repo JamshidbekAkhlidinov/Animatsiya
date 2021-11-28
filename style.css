@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .box {
     transition: 0.8s;
     width: 100px;
@@ -28,6 +33,8 @@ section {
     align-items: center;
     flex-direction: column;
     padding-top: 150px;
+    background-color: lawngreen;
+    height: 76vh;
 }
 
 .box:active {
@@ -48,5 +55,63 @@ section {
         transform: rotate(720deg) scale(2);
         border-radius: 50%;
         filter: drop-shadow(10px 10px 10px rgb(230, 66, 93));
+    }
+}
+
+.header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    /* padding: 150px; */
+    height: 100vh;
+}
+
+.box2 {
+    background-color: rgb(54, 54, 46);
+    width: 100px;
+    height: 100px;
+    transition: 0.2s;
+    animation-name: box2Animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: white;
+    padding: 20px;
+}
+
+@keyframes box2Animation {
+    form {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translatey(400px);
+    }
+}
+
+.header3 {
+    background-color: lightsalmon;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 239, 9);
+    animation-name: box3Animation;
+    transition: 0.9s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-left: 500px;
+}
+
+@keyframes box3Animation {
+    form {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(400px);
     }
 }
