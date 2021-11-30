@@ -90,7 +90,7 @@ section {
 .header3 {
     background-color: lightsalmon;
     display: flex;
-    /* justify-content: center; */
+    justify-content: start;
     align-items: center;
     height: 100vh;
 }
@@ -104,14 +104,13 @@ section {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    margin-left: 500px;
 }
 
 @keyframes box3Animation {
     form {
-        transform: translateX(-200px);
+        /* transform: translateX(-200px); */
     }
     to {
-        transform: translateX(400px);
+        transform: translateX(90vw);
     }
 }
